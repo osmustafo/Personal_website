@@ -1,0 +1,173 @@
+html, body{
+    background-color: black;
+    margin: auto;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.first{
+    display: flex;
+    width: 70%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: black;
+    font-family: sans-serif;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.texts1{
+    flex: 1;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 2s ease-in-out;
+    align-items: center;
+}
+.center{
+    display: flex;
+    align-items: center;
+}
+.pageLight, #personal, #contact{
+    background-color: #FFF2D7;
+}
+.pageLight{
+    width: 100%;
+}
+#pics{
+    background-color: #FFF2D7;
+    width: 100%;
+}
+.squarePics img{
+    box-shadow: #74512D 0px 0px 20px;
+}
+.squarePics{
+    margin: 10px;
+}
+.info{
+    font-size: 600%;
+}
+#PersonalInfo, #ContactInfo{
+    color: black;
+}
+.mainPhoto{
+    width: 100%;
+}
+.contactImg img{
+    width: 30px;
+}
+h1{
+    font-size: 450%;
+    font-weight: 800;
+    font-family: "Bodoni Moda", serif;
+}
+#name{
+    font-weight: 900;
+}
+h2{
+    font-size: 150%;
+}
+.iconNames{
+    padding-left: 30px;
+    font-size: 90%;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #74512D;
+}
+.mainText{
+    color: #757575;
+    font-size: 120%;
+}
+a{
+    text-decoration: none;
+    font-weight: 900;
+    color: #74512D;
+}
+.italic{
+    font-style: italic;
+}
+#BG{
+    color: #222;
+    font-weight: 400;
+    height: 100vh;
+    background-color: #FFF2D7;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 150%;
+    padding-left: 7%;
+    padding-right: 7%;
+    margin-left: 5%;
+    line-height: 150%;
+    text-align: justify;
+    align-content: center;
+}
+.contactImg{
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    padding: 15px;
+    padding-left: 150px;
+}
+
+.slide-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/* Media */
+
+
+@media (max-width: 1000px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    
+    .first{
+        align-content: center;
+        margin: 0;
+        flex-direction: column;
+        padding: 10%;
+        height: auto;
+    }
+
+    h1, .info{
+        font-size: 300%;
+    }
+
+    .contactImg{
+        padding: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .pageLight{
+        display: flex;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    #BG{
+        margin: 0;
+        padding: 5%;
+        font-size: 110%;
+    }
+
+    .texts1{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .mainPhoto {
+        width: 100%;
+        margin: 0;
+    }
+}
